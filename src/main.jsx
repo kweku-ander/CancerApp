@@ -1,3 +1,5 @@
+import { Buffer } from 'buffer';
+
 import React from 'react';
 
 import ReactDOM from 'react-dom/client';
@@ -11,6 +13,7 @@ import './index.css';
 import {PrivyProvider} from '@privy-io/react-auth';
 
 
+window.Buffer = Buffer;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
