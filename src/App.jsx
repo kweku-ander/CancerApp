@@ -1,9 +1,10 @@
 import React from 'react';
-// import Sidebar from './components/Sidebar';
 
 import {Route, Routes, useNavigate} from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
+import { Home } from './pages';
+// import { Home } from './pages';
 
 const App = () => {
     return(
@@ -18,7 +19,7 @@ const App = () => {
             <Navbar /> 
 
             <Routes>
-                <Route path='/' element ={<div>Home Page</div>} />
+                <Route path='/' element = { < Home /> } />
             </Routes>
             </div>
 
